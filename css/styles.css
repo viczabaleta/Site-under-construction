@@ -1,0 +1,222 @@
+@font-face {
+    font-family: Acumin Pro Wide;
+    src: url(/fonts/Acumin\ Pro\ Wide\ Light.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #070104 0%, #460538 100%), linear-gradient(180deg, #070104 0%, #460538 100%);
+    overflow-x: hidden;
+}
+
+/*p {
+    font-family: Acumin Pro Wide, sans-serif
+}*/
+
+header {
+    height: 20vh;
+}
+
+.header__logo {
+    height: 50px;
+    width: auto;
+    margin-left: 138px;
+    margin-top: 44px;
+}
+
+main {
+    height: 80vh;
+    /* background-image: url(../images/NFT_bottle.png);
+    background-repeat: no-repeat; */
+
+    display: flex;
+}
+
+.title {
+    color: white;
+    margin-top: 60px;
+    margin-left: 138px;
+    font-family: Neue Machina;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 600px;
+
+}
+
+
+section {
+    font-family: Acumin Pro Wide;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+button {
+    font-family: Acumin Pro Wide;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.text {
+    width: 572px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 138px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn--1, .btn--2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.btn--1 {
+    width: 335px;
+    height: 50px;
+    background: linear-gradient(90.19deg, #FF547B 0.16%, #D639FD 99.84%);
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-left: 138px;
+    filter: drop-shadow(0px 0px 20px rgba(235, 75, 152, 0.5));
+    text-align: center;
+    color: white;
+    border: none;
+
+}
+
+.btn--1:hover {
+    cursor: pointer;
+}
+
+.btn--2 {
+    width: 335px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 20px;
+    text-align: center;
+    color: #FF547B;
+    background: none;
+    border: none;
+}
+
+.btn--2:hover {
+    cursor: pointer;
+}
+
+.phone {
+    position: fixed;
+    left: 700px;
+}
+
+.bottle {
+    position: fixed;
+    left: 20px;
+    z-index: -1;
+}
+
+
+/* -------- MEDIA QUERIES -------- */
+
+@media (max-width: 768px) {
+
+    
+
+    /* HEADER */
+
+    header {
+        height: auto;
+    }
+
+    .header__logo {
+        height: 40px;
+        width: auto;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    /* MAIN */
+
+    .title {
+        height: auto;
+        width: 340px;
+        margin-left: 20px;
+        margin-top: 50px;
+        font-size: 38px;
+        line-height: 38.6px;
+ 
+    }    
+
+    .text {
+        height: 119px;
+        width: 330px;
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 19px;
+        
+    }
+
+    .phone {
+        position: absolute;
+        left: 40px;
+        top: 380px;
+    }
+
+    .phone img {
+        width: 300px;
+        height: auto;
+    }
+
+    .bottle {
+        position: absolute;
+        left: 170px;
+        top: 30px;
+        overflow-x: hidden;
+    }
+
+    .bottle img {
+        height: 370px;
+    }
+
+    .btns {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        font-size: 16px;
+        margin-top: 230px;
+    }
+
+    .btn--1, .btn--2 {
+        margin: auto;
+    }
+
+}
