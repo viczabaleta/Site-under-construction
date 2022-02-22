@@ -13,10 +13,11 @@
 
 
 body {
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
     background: linear-gradient(180deg, #070104 0%, #460538 100%), linear-gradient(180deg, #070104 0%, #460538 100%);
-    overflow-x: hidden;
+    overflow: hidden;
+    padding: 0 138px;
 }
 
 /*p {
@@ -30,14 +31,11 @@ header {
 .header__logo {
     height: 50px;
     width: auto;
-    margin-left: 138px;
     margin-top: 44px;
 }
 
 main {
-    height: 80vh;
-    /* background-image: url(../images/NFT_bottle.png);
-    background-repeat: no-repeat; */
+    /* height: 80vh; */
 
     display: flex;
 }
@@ -45,7 +43,6 @@ main {
 .title {
     color: white;
     margin-top: 60px;
-    margin-left: 138px;
     font-family: Neue Machina;
     font-size: 48px;
     font-style: normal;
@@ -79,7 +76,6 @@ button {
     width: 572px;
     color: white;
     margin-top: 50px;
-    margin-left: 138px;
 }
 
 .btns {
@@ -103,7 +99,6 @@ button {
     background: linear-gradient(90.19deg, #FF547B 0.16%, #D639FD 99.84%);
     border-radius: 25px;
     margin-top: 40px;
-    margin-left: 138px;
     filter: drop-shadow(0px 0px 20px rgba(235, 75, 152, 0.5));
     text-align: center;
     color: white;
@@ -145,6 +140,9 @@ button {
 /* -------- MEDIA QUERIES -------- */
 
 @media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
 
     
 
@@ -157,7 +155,6 @@ button {
     .header__logo {
         height: 40px;
         width: auto;
-        margin-left: 20px;
         margin-top: 30px;
     }
 
@@ -166,7 +163,6 @@ button {
     .title {
         height: auto;
         width: 340px;
-        margin-left: 20px;
         margin-top: 50px;
         font-size: 38px;
         line-height: 38.6px;
@@ -174,9 +170,7 @@ button {
     }    
 
     .text {
-        height: 119px;
         width: 330px;
-        margin-left: 20px;
         margin-top: 20px;
         font-size: 16px;
         line-height: 19px;
